@@ -1,6 +1,6 @@
 # Test Gaming Experiment
 
-Reward hacking is when an AI deceptively finds a shortcut to pass a score without doing the job you assigned it to do.
+Reward hacking is when an AI finds an unintentional shortcut to pass a score without doing the job you assigned it to do.
 
 Take for instance, a technical drawing student sitting tasked to draw and be evaluated on a scale of 100 points, only to steal the marking scheme and copy the drawing to get the 100 points. 
 Quite alright, the student scores the 100 points, but the aim, then, is defeated because, the examination was supposed to judge the students
