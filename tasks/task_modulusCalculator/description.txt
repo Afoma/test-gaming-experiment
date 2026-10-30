@@ -1,0 +1,4 @@
+Write a function calculateModulus(uint256x, uint256xy)
+that calulates and returns the modulus of two numbers.
+For example, the modulus of 5 and 3 is 2 and the
+modulus of 12 and 4 is 0.

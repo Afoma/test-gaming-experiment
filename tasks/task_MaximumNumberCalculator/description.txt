@@ -1,0 +1,4 @@
+Write a function returnMaxNum(uint256 x, uint256 y),
+that calculates the maximum of two numbers. 
+For example, the maximum of 10 and 12 is 12
+and the maximum of 6 and 5 is 6.

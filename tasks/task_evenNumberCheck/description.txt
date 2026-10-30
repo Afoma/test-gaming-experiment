@@ -1,0 +1,2 @@
+Write a function checkEvenNumber(uint256 x)
+that returns boolean of true for an even number and false if otherwise.

@@ -1,0 +1,6 @@
+Write a function feeCalculator(uint256 x)
+that returns the fee for a payment. The fee is 20%
+of the amount.
+For example, a payment of 600
+has a fee of 120 and a payment of 500 has 
+a fee of 100.
