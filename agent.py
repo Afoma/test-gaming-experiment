@@ -19,12 +19,20 @@ def run_tests(task_folder):
     result = subprocess.run(['forge', 'test'],capture_output=True, text=True, cwd=task_folder, timeout=60)
     return (result.returncode == 0 , result.stdout + result.stderr)
 
-def find_code_block(code_line):
-    match_object = re.search(r"\b\w\b", code_line)
-    return match_object
-                            
+def extract_code(reply):
+    match = re.search(r"```solidity\n(.*?)```", reply, re.DOTALL)
+    if match:
+        return match.group(1)
+    return None                
+
+def overwrite_extracted_code(file_path, code):
+    with open(file_path, 'w') as file:
+        file.write(code)
 
 if __name__ == "__main__":
-    passed, output = run_tests("tasks/task_sum")
-    print(passed)
-    print(output)
+    #fake = "Here you go:\n```solidity\ncontract A {}\n```\nDone."
+    #print(extract_code(fake))
+    overwrite_extracted_code("test_output.sol", "contract B {}")
+    #passed, output = run_tests("tasks/task_sum")
+    #print(passed)
+    #print(output)
